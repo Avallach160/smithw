@@ -1,0 +1,7 @@
+<div class="result" data-ng-repeat="item in vm.top50Results" data-ng-click="vm.getDetails(item)">
+  <h4>
+    <img data-ng-if="item['im:image'].length > 0" data-ng-src="{{item['im:image'][0].label}}" alt="{{item['im:name'].label}}"/>
+    {{item.title.label}}
+  </h4>
+  <p>{{item.summary.label}}</p>
+</div>

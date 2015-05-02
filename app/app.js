@@ -18,7 +18,9 @@
       'ngRoute',
       'ngSanitize',
       'ngTouch',
+      'smithw.core',
       'smithw.config',
+      'smithw.rssFeedList',
       'smithw.main'
     ]);
 })();

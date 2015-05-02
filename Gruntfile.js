@@ -35,7 +35,10 @@ module.exports = function (grunt) {
       },
       js: {
         files: [
-          '<%= yeoman.app %>/{,*/,*/}*.js'
+          '<%= yeoman.app %>/pages/**/*.js',
+          '<%= yeoman.app %>/components/**/*.js',
+          '<%= yeoman.app %>/services/*.js',
+          '<%= yeoman.app %>/*.js'
         ],
         tasks: ['newer:jshint:all'],
         options: {
@@ -58,7 +61,9 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= yeoman.app %>/{,*/,*/}*.html',
+          '<%= yeoman.app %>/pages/**/*.html',
+          '<%= yeoman.app %>/components/**/*.html',
+          '<%= yeoman.app %>/*.html',
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -158,7 +163,7 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          map: true,
+          map: true
         },
         files: [{
           expand: true,

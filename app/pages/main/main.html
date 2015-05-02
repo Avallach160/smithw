@@ -1,1 +1,7 @@
 <h3>Select a top 50 list</h3>
+<div>
+  <button type="btn" class="btn btn-lg btn-default" data-ng-class="{'btn-primary': vm.active === 'movies' }" data-ng-click="vm.selectTop50('movies')">Movies</button>
+  <button type="btn" class="btn btn-lg btn-default" data-ng-class="{'btn-primary': vm.active === 'books' }" data-ng-click="vm.selectTop50('books')">Books</button>
+  <button type="btn" class="btn btn-lg btn-default" data-ng-class="{'btn-primary': vm.active === 'podcasts' }" data-ng-click="vm.selectTop50('podcasts')">Podcasts</button>
+</div>
+<rss-feed-list top50="vm.active"></rss-feed-list>
