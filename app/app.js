@@ -21,6 +21,7 @@
       'smithw.core',
       'smithw.config',
       'smithw.rssFeedList',
-      'smithw.main'
+      'smithw.main',
+      'smithw.details'
     ]);
 })();

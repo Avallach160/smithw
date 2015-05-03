@@ -16,7 +16,7 @@
     }
 
     function getDetails(item){
-      console.log(item);
+      $location.path('/details/' + vm.top50 + '/' + item.id.attributes['im:id']);
     }
 
     function loadList(){

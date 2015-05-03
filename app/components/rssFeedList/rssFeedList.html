@@ -1,4 +1,7 @@
-<div class="result" data-ng-repeat="item in vm.top50Results" data-ng-click="vm.getDetails(item)">
+<div data-ng-if="vm.top50 !== undefined">
+  Filter: <input type="text" data-ng-model="vm.searchText"/>
+</div>
+<div class="result" data-ng-repeat="item in vm.top50Results | search: vm.searchText" data-ng-click="vm.getDetails(item)">
   <h4>
     <img data-ng-if="item['im:image'].length > 0" data-ng-src="{{item['im:image'][0].label}}" alt="{{item['im:name'].label}}"/>
     {{item.title.label}}

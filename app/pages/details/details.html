@@ -1,0 +1,23 @@
+<h2>
+  <img data-ng-src="{{vm.item['im:image'][vm.imgIndex].label}}" alt="{{vm.item['im:name'].label}}"/>
+  {{vm.item.title.label}}
+</h2>
+<div>
+  <label>Genre:</label> {{vm.item.category.attributes.label}}
+</div>
+<div>
+  <label>Release Date:</label> {{vm.item['im:releaseDate'].label}}
+</div>
+<div>
+  <label>Price:</label> {{vm.item['im:price'].label}}
+</div>
+<div>
+  <a data-ng-href="{{vm.link.attributes.href}}" target="_blank">Get it here.</a>
+</div>
+<p>
+  {{vm.item.summary.label}}
+</p>
+
+<p>
+  <small>{{vm.item.rights.label}}</small>
+</p>

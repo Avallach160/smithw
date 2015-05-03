@@ -1,5 +1,5 @@
 (function () {
   'use strict';
 
-  angular.module('smithw.main', []);
+  angular.module('smithw.main', ['tmixCaching']);
 })();
